@@ -1,0 +1,23 @@
+{
+  "name": "roinfo",
+  "version": "1.0.0",
+  "description": "A Roblox user utility",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustAnother-Programmer/RoInfo.git"
+  },
+  "author": "JustAnotherProgrammer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustAnother-Programmer/RoInfo/issues"
+  },
+  "homepage": "https://github.com/JustAnother-Programmer/RoInfo#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.64",
+    "electron": "^19.0.6"
+  }
+}

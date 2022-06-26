@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>RoInfo - Version 1.0.0</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>RoInfo</h1>
+
+    <div class="user">
+        <h2>User Lookup:</h2>
+
+        <h3>Enter Username:</h3>
+        <input type="text" id="userName">
+    </div>
+
+    <br>
+
+    <div class="groupLookup">
+        <h2>Group Lookup:</h2>
+
+        <button type="button" class="groupAddBtn" id="groupAdd">Add Extra Group ID Field</button>
+
+        <div class="groupIdContainer" id="groupIds">
+            <input type="number" id="groupId1">
+        </div>
+
+        <button type="button" class="groupAddBtn" id="lookupButton">Search</button>
+    </div>
+
+    <script src="./js/renderer.js"></script>
+</body>
+
+</html>
