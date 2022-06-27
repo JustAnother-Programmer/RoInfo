@@ -11,6 +11,23 @@ body {
     align-items: center;
 }
 
+.resultText {
+    color: white;
+    font-size: 16px;
+}
+
+.errorText {
+    color: red;
+    font-size: 18px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .groupLookup {
     color: white;
     display: flex;
@@ -30,7 +47,19 @@ body {
     background-color: green;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.groupRemoveBtn {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 26px;
+    margin-left: 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -46,6 +75,19 @@ body {
 }
 
 input[type=number] {
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #2d2d2d;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: white;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+input[type=text] {
     padding: 0;
     height: 30px;
     position: relative;

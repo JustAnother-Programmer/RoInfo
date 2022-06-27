@@ -10,12 +10,13 @@
 
 <body>
     <h1>RoInfo</h1>
+    <p class="errorText" id="errorText"></p>
 
     <div class="user">
         <h2>User Lookup:</h2>
 
         <h3>Enter Username:</h3>
-        <input type="text" id="userName">
+        <input type="text" id="username">
     </div>
 
     <br>
@@ -23,11 +24,16 @@
     <div class="groupLookup">
         <h2>Group Lookup:</h2>
 
-        <button type="button" class="groupAddBtn" id="groupAdd">Add Extra Group ID Field</button>
+        <div class="buttonContainer">
+            <button type="button" class="groupAddBtn" id="groupAdd">Add Extra Group ID Field</button>
+            <button type="button" class="groupRemoveBtn" id="groupRemove">Remove last ID Field</button>
+        </div>
 
         <div class="groupIdContainer" id="groupIds">
             <input type="number" id="groupId1">
         </div>
+
+        <h4 class="resultText" id="resultText"></h4>
 
         <button type="button" class="groupAddBtn" id="lookupButton">Search</button>
     </div>
