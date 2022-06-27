@@ -6,6 +6,7 @@ let win
 
 const createWindow = () => {
     win = new BrowserWindow({
+        icon: path.join(__dirname, 'public/images/icon.png'),
         width: 1280,
         height: 720,
         webPreferences: {
@@ -15,6 +16,9 @@ const createWindow = () => {
             preload: path.join(__dirname, 'preload.js')
         }
     })
+
+    win.setMenuBarVisibility(false);
+    win.setAutoHideMenuBar(true);
 
     win.loadFile(path.join(__dirname, 'public/index.html'))
 }
